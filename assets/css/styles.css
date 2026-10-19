@@ -922,7 +922,27 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.1; margin: 0; 
 .field select option { background: var(--bg-2); }
 .field textarea { resize: vertical; min-height: 110px; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--c2); background: var(--surface-2); }
-.form-note { font-size: 12.5px; color: var(--text-mute); margin: 0; }
+.cta-box .form-note { font-size: 12.5px; color: var(--text-mute); margin: 0; }
+
+.contact-cards { display: grid; gap: 12px; }
+.c-card {
+  display: flex; align-items: flex-start; gap: 14px; padding: 14px 16px; border-radius: 16px; color: var(--text);
+  background: rgb(var(--panel) / .45); border: 1px solid var(--border);
+  transition: border-color .25s ease, transform .25s ease, background .25s ease;
+}
+a.c-card:hover { border-color: rgb(var(--c2-rgb) / .5); transform: translateY(-2px); }
+.c-ic { width: 42px; height: 42px; border-radius: 12px; flex: none; display: grid; place-items: center; background: var(--grad); color: var(--on-grad); }
+.c-ic svg { width: 20px; height: 20px; }
+.c-card small { display: block; font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-mute); margin-bottom: 2px; }
+.c-card b { display: block; font-weight: 600; line-height: 1.45; }
+.c-card div > a { display: block; font-weight: 600; line-height: 1.6; }
+.c-card div > a:hover { color: var(--c2); }
+.c-card em { display: block; font-style: normal; font-size: 13px; color: var(--c2); margin-top: 2px; }
+.c-wa .c-ic { background: #25d366; color: #fff; }
+.c-wa:hover { border-color: rgba(37,211,102,.55) !important; }
+.c-wa em { color: #25d366; }
+:root[data-theme="light"] .c-card { background: #fff; }
+:root[data-theme="light"] .c-wa em { color: #15803d; }
 
 .contact-points { display: grid; gap: 12px; }
 .contact-points a, .contact-points div { display: inline-flex; align-items: center; gap: 12px; color: var(--text); font-weight: 500; }

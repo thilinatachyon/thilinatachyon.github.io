@@ -96,7 +96,8 @@
     const d = new FormData(form);
     const subject = `[${d.get('topic')}] Enquiry from ${d.get('name')}`;
     const body = `${d.get('message')}\n\n— ${d.get('name')} (${d.get('email')})`;
-    window.location.href = `mailto:${form.dataset.mailto}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const cc = form.dataset.cc ? `cc=${encodeURIComponent(form.dataset.cc)}&` : '';
+    window.location.href = `mailto:${form.dataset.mailto}?${cc}subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     note.textContent = 'Your email app should open now. If it doesn’t, email us directly at ' + form.dataset.mailto + '.';
   });
 

@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowLabs — ERP & Workflow Software | A Tachyon (Pvt) Ltd Company</title>
+  <meta name="description" content="FlowLabs builds modern ERP and workflow software. EPCFlow is one platform to sell, buy, stock, repair and deliver; FlowSync helps software teams plan, build and ship together." />
+  <meta name="theme-color" content="#07080d" />
+
+  <!-- Open Graph — TODO: replace your-domain.com and add assets/img/og-cover.png (1200x630) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="FlowLabs — Software that keeps your business flowing" />
+  <meta property="og:description" content="Modern ERP and workflow platforms engineered by FlowLabs, a Tachyon (Pvt) Ltd company." />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/assets/img/og-cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236d5dfc'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='40' height='40' rx='11' fill='url(%23g)'/%3E%3Cpath d='M11 27c5 0 6-14 12-14 3 0 4 2 6 4' stroke='%2305060a' stroke-width='3.4' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='29' cy='26' r='3' fill='%2305060a'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script>
+    // Apply the saved theme before first paint to avoid a flash.
+    document.documentElement.classList.remove('no-js');
+    try { var t = localStorage.getItem('flowlabs-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="FlowLabs home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6d5dfc"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs>
+          <rect width="40" height="40" rx="11" fill="url(#lg)"/>
+          <path d="M11 27c5 0 6-14 12-14 3 0 4 2 6 4" stroke="#05060a" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+          <circle cx="29" cy="26" r="3" fill="#05060a"/>
+        </svg>
+        <span>Flow<b>Labs</b></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="mobile-cta"><a href="#contact" class="btn btn-primary">Start a project</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="theme-switch" id="theme-switch">
+          <button class="theme-btn" id="theme-btn" aria-label="Change theme" aria-haspopup="true" aria-expanded="false">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 1 10-10c0 2.8-2.2 4-4 4h-2.5a2 2 0 0 0-1.5 3.3A1.7 1.7 0 0 1 12 22z"/><circle cx="7.5" cy="10.5" r="1.3" fill="currentColor"/><circle cx="12" cy="7" r="1.3" fill="currentColor"/><circle cx="16.5" cy="10.5" r="1.3" fill="currentColor"/></svg>
+          </button>
+          <div class="theme-menu" role="menu" aria-label="Theme">
+            <p>Theme</p>
+            <button class="theme-opt" role="menuitemradio" data-theme-value="dark" style="--sw: linear-gradient(135deg,#07080d 50%,#6d5dfc 50%,#22d3ee)"><span class="sw"></span>Dark<svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+            <button class="theme-opt" role="menuitemradio" data-theme-value="light" style="--sw: linear-gradient(135deg,#f5f6fb 50%,#5b4bf5 50%,#0891b2)"><span class="sw"></span>Light<svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+            <button class="theme-opt" role="menuitemradio" data-theme-value="ocean" style="--sw: linear-gradient(135deg,#050b16 50%,#3b82f6 50%,#2dd4bf)"><span class="sw"></span>Ocean<svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+            <button class="theme-opt" role="menuitemradio" data-theme-value="sunset" style="--sw: linear-gradient(135deg,#0d0907 50%,#f97316 50%,#f43f5e)"><span class="sw"></span>Sunset<svg class="check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></button>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-sm">Start a project</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div>
+          <a href="#products" class="pill reveal"><b>New</b> EPCFlow ERP is live · FlowSync in pilot →</a>
+          <h1 class="reveal" style="--d:.08s">Software that keeps your business <span class="grad-text">flowing.</span></h1>
+          <p class="hero-sub reveal" style="--d:.16s">
+            FlowLabs engineers modern ERP and workflow platforms — from finance and procurement to
+            sprints and task boards — built on proven, enterprise-grade stacks and designed for teams
+            that move fast.
+          </p>
+          <div class="hero-ctas reveal" style="--d:.24s">
+            <a href="#products" class="btn btn-primary">
+              Explore our products
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Talk to our team</a>
+          </div>
+          <div class="hero-meta reveal" style="--d:.32s">
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Enterprise ERP</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Agile project management</div>
+            <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>QA-driven delivery</div>
+          </div>
+        </div>
+
+        <!-- Pure-CSS dashboard mockup -->
+        <div class="mockup-wrap reveal" style="--d:.2s" aria-hidden="true">
+          <div class="mockup">
+            <div class="mk-top"><i></i><i></i><i></i><span>app.epcflow / dashboard</span></div>
+            <div class="mk-body">
+              <div class="mk-side"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="mk-main">
+                <div class="mk-stats">
+                  <div class="mk-stat"><small>Revenue</small><b>Rs 4.8M</b><em>▲ 12.4%</em></div>
+                  <div class="mk-stat"><small>Orders</small><b>1,284</b><em>▲ 8.1%</em></div>
+                  <div class="mk-stat"><small>Projects</small><b>36</b><em>▲ 4</em></div>
+                </div>
+                <div class="mk-chart">
+                  <i style="--h:38%"></i><i style="--h:55%"></i><i style="--h:44%"></i><i style="--h:68%"></i>
+                  <i style="--h:52%"></i><i style="--h:76%"></i><i style="--h:63%"></i><i style="--h:88%"></i>
+                  <i style="--h:72%"></i><i style="--h:94%"></i><i style="--h:80%"></i><i style="--h:100%"></i>
+                </div>
+                <div class="mk-rows">
+                  <div class="mk-row"><i class="dot"></i><span>Procurement</span><div class="bar" style="--w:82%"></div></div>
+                  <div class="mk-row"><i class="dot amber"></i><span>Inventory</span><div class="bar" style="--w:64%"></div></div>
+                  <div class="mk-row"><i class="dot violet"></i><span>Finance</span><div class="bar" style="--w:91%"></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float-card fc1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></div>
+            <div><b>Sprint completed</b><small>FlowSync · 24 tasks done</small></div>
+          </div>
+          <div class="float-card fc2">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg></div>
+            <div><b>Purchase order approved</b><small>EPCFlow · just now</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TECH STRIP ================= -->
+    <section class="strip" aria-label="Technologies we work with">
+      <div class="strip-label">Built with battle-tested technology</div>
+      <div class="strip-mask">
+        <div class="marquee">
+          <ul>
+            <li><i></i>Java</li><li><i></i>Spring Boot</li><li><i></i>React</li><li><i></i>Laravel</li>
+            <li><i></i>PHP</li><li><i></i>TypeScript</li><li><i></i>REST APIs</li><li><i></i>SQL Databases</li>
+            <li><i></i>Test Automation</li><li><i></i>Cloud Deployment</li><li><i></i>CI / CD</li>
+          </ul>
+          <ul aria-hidden="true">
+            <li><i></i>Java</li><li><i></i>Spring Boot</li><li><i></i>React</li><li><i></i>Laravel</li>
+            <li><i></i>PHP</li><li><i></i>TypeScript</li><li><i></i>REST APIs</li><li><i></i>SQL Databases</li>
+            <li><i></i>Test Automation</li><li><i></i>Cloud Deployment</li><li><i></i>CI / CD</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What we do</span>
+          <h2>End-to-end software, <span class="grad-text">engineered to scale.</span></h2>
+          <p>From architecture to automated testing, we design, build and ship the systems that run your operations.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></div>
+            <h3>ERP Solutions</h3>
+            <p>Unified platforms that connect finance, procurement, inventory, projects and people in one source of truth.</p>
+            <ul><li>Modular, configurable architecture</li><li>Role-based access &amp; approvals</li><li>Real-time reporting &amp; dashboards</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.1s">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/><path d="m14 4-4 16"/></svg></div>
+            <h3>Custom Software &amp; Web Apps</h3>
+            <p>Tailor-made business applications with clean APIs and fast, responsive interfaces your teams will love using.</p>
+            <ul><li>Spring Boot &amp; Laravel back-ends</li><li>React front-ends</li><li>Integrations &amp; REST APIs</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.2s">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Quality Engineering</h3>
+            <p>Manual and automated testing woven into every sprint, so releases are predictable and production stays calm.</p>
+            <ul><li>Manual &amp; exploratory testing</li><li>Test automation suites</li><li>Regression &amp; release QA</li></ul>
+          </article>
+
+          <article class="card reveal" style="--d:.3s">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></div>
+            <h3>Software &amp; IT System Consultation</h3>
+            <p>Expert guidance to plan, modernise and get the most from your software and IT systems before you invest.</p>
+            <ul><li>Requirements &amp; solution architecture</li><li>System audits &amp; technology selection</li><li>Digital transformation roadmaps</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Our products</span>
+          <h2>Multiple platforms. <span class="grad-text">One flow.</span></h2>
+          <p>Run your business with EPCFlow and ship your software with FlowSync, both built in-house by FlowLabs.</p>
+        </div>
+
+        <!-- EPCFlow -->
+        <article class="product reveal">
+          <div>
+            <span class="product-tag">Latest release</span>
+            <h3><span class="grad-text">EPCFlow</span> ERP</h3>
+            <p class="tagline">One platform to sell, buy, stock, repair and deliver, for any business that runs on orders, inventory and jobs.</p>
+            <p>Whether you run a shop, a service centre, a workshop or an installation team, EPCFlow brings sales, purchasing,
+              inventory, service and repair jobs, staff and access control together in one secure web platform. Every order,
+              payment, stock movement and task is connected, so your team works from one source of truth across every business
+              and location you run.</p>
+            <div class="industries">
+              <span class="ind-label">Perfect for</span>
+              <span>Retail &amp; distribution</span><span>Repair &amp; service centres</span><span>Installation &amp; contracting</span>
+              <span>Solar &amp; energy</span><span>Electronics &amp; equipment</span><span>Workshops &amp; manufacturing</span>
+            </div>
+            <p class="motto">From first quote to finished job, <span class="grad-text">all in one flow.</span></p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>One connected system, no spreadsheets</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Real-time stock levels &amp; alerts</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>VAT-aware invoicing out of the box</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Multiple businesses &amp; locations</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Roles, permissions &amp; single sign-on</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Cloud-ready &amp; scales as you grow</li>
+            </ul>
+            <div class="stack-chips"><span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">React</span><span class="chip">REST API</span></div>
+          </div>
+
+          <!-- EPCFlow live preview — rebuilt in HTML with illustrative sample data (no real customer data) -->
+          <div class="product-visual erp-demo" id="erp-demo">
+            <div class="demo-window">
+              <div class="demo-bar" aria-hidden="true"><i></i><i></i><i></i><span>app.epcflow / <b id="demo-path">orders</b></span></div>
+              <div class="demo-tabs" role="tablist" aria-label="EPCFlow preview">
+                <button role="tab" id="tab-orders" aria-controls="panel-orders" aria-selected="true" data-tab="orders">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 7H6"/></svg>Orders</button>
+                <button role="tab" id="tab-inventory" aria-controls="panel-inventory" aria-selected="false" data-tab="inventory" tabindex="-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>Inventory</button>
+                <button role="tab" id="tab-workflow" aria-controls="panel-workflow" aria-selected="false" data-tab="workflow" tabindex="-1">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="6" rx="1.5"/><rect x="14" y="15" width="7" height="6" rx="1.5"/><path d="M6.5 9v3a3 3 0 0 0 3 3h4.5"/></svg>Workflows</button>
+                <span class="demo-progress" aria-hidden="true"></span>
+              </div>
+
+              <div class="demo-panels">
+                <!-- Orders by status -->
+                <section class="demo-panel active" id="panel-orders" role="tabpanel" aria-labelledby="tab-orders">
+                  <h4 class="demo-title">Orders by status</h4>
+                  <div class="ord-grid">
+                    <div class="ord" style="--dot:var(--c1)"><span>All Orders</span><b>248</b></div>
+                    <div class="ord" style="--dot:#9ca3af"><span>Created</span><b>26</b></div>
+                    <div class="ord" style="--dot:#0ea5e9"><span>Confirmed</span><b>14</b></div>
+                    <div class="ord" style="--dot:#f59e0b"><span>Pending</span><b>18</b></div>
+                    <div class="ord" style="--dot:#22c55e"><span>Delivered</span><b>172</b></div>
+                    <div class="ord" style="--dot:#8b5cf6"><span>Completed</span><b>9</b></div>
+                    <div class="ord" style="--dot:#9ca3af"><span>Returned</span><b>5</b></div>
+                    <div class="ord" style="--dot:#ef4444"><span>Cancelled</span><b>4</b></div>
+                  </div>
+                  <div class="ord-rate">
+                    <div><span>Delivery rate</span><b>93%</b></div>
+                    <div class="bar"><i style="--w:93%"></i></div>
+                  </div>
+                </section>
+
+                <!-- Inventory / stock levels -->
+                <section class="demo-panel" id="panel-inventory" role="tabpanel" aria-labelledby="tab-inventory" hidden>
+                  <p class="crumbs">Home <i>›</i> Inventory <i>›</i> <b>Stock Levels</b></p>
+                  <div class="low-stock">
+                    <p><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><b>Low stock</b> · 2 items need attention</p>
+                    <div class="ls-row"><span>Hybrid Solar Inverter 5kW</span><em>0 on hand</em><mark>Critical</mark></div>
+                    <div class="ls-row"><span>Distribution Box Kit</span><em>0 on hand</em><mark>Critical</mark></div>
+                  </div>
+                  <table class="stock">
+                    <thead><tr><th>ID</th><th>Item</th><th>Stock</th><th class="hide-sm">Avail.</th><th>Location</th></tr></thead>
+                    <tbody>
+                      <tr><td>1042</td><td><span class="pill-item">Lithium Battery 51.2V</span></td><td>11</td><td class="hide-sm">4</td><td><span class="loc">Main Store</span></td></tr>
+                      <tr><td>1018</td><td><span class="pill-item">Solar Inverter 5kW</span></td><td class="zero">0</td><td class="hide-sm zero">0</td><td><span class="loc">Showroom</span></td></tr>
+                      <tr><td>0995</td><td><span class="pill-item">LiFePO4 Cell 280Ah</span></td><td>64</td><td class="hide-sm">40</td><td><span class="loc">Store B</span></td></tr>
+                      <tr><td>1007</td><td><span class="pill-item">Distribution Box Kit</span></td><td class="zero">0</td><td class="hide-sm zero">0</td><td><span class="loc">Main Store</span></td></tr>
+                    </tbody>
+                  </table>
+                </section>
+
+                <!-- Workflow: task templates in execution order -->
+                <section class="demo-panel" id="panel-workflow" role="tabpanel" aria-labelledby="tab-workflow" hidden>
+                  <h4 class="demo-title">Task templates <small>(execution order)</small></h4>
+                  <div class="flow">
+                    <svg class="flow-lines" viewBox="0 0 300 200" preserveAspectRatio="none" aria-hidden="true">
+                      <path d="M90 98 H108"/>
+                      <path d="M192 98 C204 98 198 38 210 38"/>
+                      <path d="M192 98 C204 98 198 154 210 154"/>
+                    </svg>
+                    <div class="node n1"><header><i>1</i><span>Ver. 1</span></header><b>Assemble Unit</b><p><span>Role</span>Production</p><p><span>Est. time</span>1h</p></div>
+                    <div class="node n2"><header><i>2</i><span>Ver. 1</span></header><b>Quality Check</b><p><span>Role</span>QA Team</p><p><span>Est. time</span>30m</p></div>
+                    <div class="node n3"><header><i>3</i><span>Ver. 1</span></header><b>Dispatch</b><p><span>Role</span>Logistics</p><p><span>Est. time</span>20m</p></div>
+                    <div class="node n4"><header><i>4</i><span>Ver. 1</span></header><b>Installation</b><p><span>Role</span>Field Team</p><p><span>Est. time</span>2h</p></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <p class="demo-note">Interactive preview · sample data</p>
+          </div>
+        </article>
+
+        <!-- EPCFlow module explorer -->
+        <div class="modules reveal" id="epcflow-modules">
+          <div class="modules-head">
+            <h3>Everything in EPCFlow, <span class="grad-text">module by module.</span></h3>
+            <p>Six connected modules. Pick one to see what's inside.</p>
+          </div>
+          <div class="mod-explorer">
+            <div class="mod-tabs" role="tablist" aria-label="EPCFlow modules" aria-orientation="vertical">
+              <button role="tab" id="modtab-sales" aria-controls="mod-sales" aria-selected="true">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 7H6"/></svg></span><span><b>Sales &amp; POS</b><small>Orders, invoices, payments</small></span>
+              </button>
+              <button role="tab" id="modtab-purchasing" aria-controls="mod-purchasing" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3z"/><path d="M16 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg></span><span><b>Purchasing</b><small>POs, landed cost, suppliers</small></span>
+              </button>
+              <button role="tab" id="modtab-inventory" aria-controls="mod-inventory" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><span><b>Inventory</b><small>Live stock, alerts, serials</small></span>
+              </button>
+              <button role="tab" id="modtab-service" aria-controls="mod-service" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><span><b>Operations &amp; Service Jobs</b><small>Jobs, tasks, templates</small></span>
+              </button>
+              <button role="tab" id="modtab-hr" aria-controls="mod-hr" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></span><span><b>Human Resources</b><small>Staff and labour rates</small></span>
+              </button>
+              <button role="tab" id="modtab-admin" aria-controls="mod-admin" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><span><b>Administration &amp; Security</b><small>Businesses, roles, SSO</small></span>
+              </button>
+            </div>
+            <div class="mod-panels">
+              <section class="mod-panel" role="tabpanel" id="mod-sales" aria-labelledby="modtab-sales">
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 12.4a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 2-1.6L22 7H6"/></svg></span><div><h4>Sales &amp; POS</h4><p>Quote, sell, invoice and deliver, with payments and stock kept in sync.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Sales orders</b><span>Create standard and instant orders, with discounts and grand totals worked out for you.</span></li>
+                  <li><b>Customer management</b><span>Individuals and organisations, with VAT details and contact records.</span></li>
+                  <li><b>Customer payments</b><span>Take full or partial payments and track paid and remaining amounts.</span></li>
+                  <li><b>Smart invoicing</b><span>Tax or proforma invoices chosen automatically from the customer's VAT status. Print or export to PDF.</span></li>
+                  <li><b>Reserve stock</b><span>Hold stock for confirmed orders before they ship.</span></li>
+                  <li><b>Deliveries &amp; returns</b><span>Partial or full deliveries and returns, with serial-number tracking and refunds.</span></li>
+                  <li><b>Flexible pricing</b><span>Item prices, tiered prices, tier levels and customer-specific pricing tiers.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="mod-purchasing" aria-labelledby="modtab-purchasing" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h13v10H3z"/><path d="M16 10h3l2 3v4h-5"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg></span><div><h4>Purchasing</h4><p>Buy locally or import, and see the true landed cost of every item.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Purchase orders</b><span>For local and imported goods.</span></li>
+                  <li><b>Landed cost tracking</b><span>Customs and duties, shipping, insurance, handling, packaging and documentation fees.</span></li>
+                  <li><b>Suppliers in one place</b><span>Supplier management and supplier payments, side by side.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="mod-inventory" aria-labelledby="modtab-inventory" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span><div><h4>Inventory</h4><p>Live stock for every item and location, with a full audit trail.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Live stock levels</b><span>For every item and storage location.</span></li>
+                  <li><b>Stock history</b><span>Add or remove stock with a full audit trail of every movement.</span></li>
+                  <li><b>Low &amp; critical alerts</b><span>Low-stock and critical-stock alerts, live on the dashboard.</span></li>
+                  <li><b>Item catalogue</b><span>Items, nested categories, storage locations and units of measure.</span></li>
+                  <li><b>Serial-number tracking</b><span>For high-value items such as electronics, equipment, batteries and spare parts.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="mod-service" aria-labelledby="modtab-service" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></span><div><h4>Operations &amp; Service Jobs</h4><p>Run installation and service work from start to finish.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Service jobs</b><span>Manage installation and service work from start to finish.</span></li>
+                  <li><b>Processes &amp; tasks</b><span>A visual task pipeline with live status tracking.</span></li>
+                  <li><b>Reusable templates</b><span>Standardise how work gets done, with estimated times built in.</span></li>
+                  <li><b>Process categories</b><span>Organise every type of job.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="mod-hr" aria-labelledby="modtab-hr" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></span><div><h4>Human Resources</h4><p>Staff records and labour rates that feed straight into job costing.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Employee records</b><span>Every team member, with their position.</span></li>
+                  <li><b>Labour rates</b><span>For accurate job costing.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="mod-admin" aria-labelledby="modtab-admin" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></span><div><h4>Administration &amp; Security</h4><p>Run several companies and branches securely from one platform.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Multiple businesses &amp; locations</b><span>Run several companies and branches from one platform.</span></li>
+                  <li><b>Roles &amp; permissions</b><span>Users, roles and fine-grained permissions, so each person sees only what they need.</span></li>
+                  <li><b>Location-based access</b><span>Users work only in the branches they're assigned to.</span></li>
+                  <li><b>Secure single sign-on</b><span>Enterprise-grade login.</span></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- FlowSync -->
+        <article class="product alt reveal">
+          <div>
+            <span class="product-tag">Now in pilot · Free for early teams</span>
+            <h3><span class="grad-text">FlowSync</span></h3>
+            <p class="tagline">Plan, build and ship software, together.</p>
+            <p>FlowSync is a lightweight project management tool for software teams. It keeps your roadmap, sprints, issues,
+              code activity and deployments in one place, so everyone knows what ships next, who is working on it, and exactly
+              which release delivered it.</p>
+            <div class="industries">
+              <span class="ind-label">Perfect for</span>
+              <span>Software teams</span><span>Agencies</span><span>Product companies</span><span>Growing startups</span>
+            </div>
+            <p class="motto">The essentials your team needs, <span class="grad-text">without the complexity.</span></p>
+            <ul class="feature-list">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Roadmap, releases &amp; epics</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sprints with team capacity</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Kanban board with guarded workflow</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Time logging against estimates</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>GitHub branches, commits &amp; PRs</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Deployment records per environment</li>
+            </ul>
+            <div class="product-actions">
+              <a href="#contact" class="btn btn-primary btn-sm" data-topic="FlowSync (pilot)">Join the free pilot
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+              <div class="stack-chips"><span class="chip">Laravel</span><span class="chip">PHP</span><span class="chip">React</span><span class="chip">REST API</span></div>
+            </div>
+          </div>
+
+          <div class="product-visual fs-visual" aria-hidden="true">
+            <div class="fs-sprint">
+              <div><b>Sprint 14</b><span>Ship v2.4 release · 6 days left</span></div>
+              <div class="fs-sprint-bar"><i style="--w:62%"></i></div>
+              <em>62%</em>
+            </div>
+            <div class="visual-kanban">
+              <div class="kb-col">
+                <h4>To do <span>3</span></h4>
+                <div class="kb-card"><span class="lbl l1">Story</span><p>Customer onboarding flow</p><div class="kb-meta"><small>FS-142</small><i></i></div></div>
+                <div class="kb-card"><span class="lbl l4">Task</span><p>Evaluate reporting API</p><div class="kb-meta"><small>FS-139</small><i class="p"></i></div></div>
+              </div>
+              <div class="kb-col">
+                <h4>In progress <span>2</span></h4>
+                <div class="kb-card"><span class="lbl l2">Bug</span><p>Fix sprint burndown sync</p><div class="kb-meta"><small class="gh"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>PR #42</small><i class="p"></i></div></div>
+                <div class="kb-card"><span class="lbl l1">Feature</span><p>Bulk issue reassignment</p><div class="kb-meta"><small>FS-127</small><i></i></div></div>
+              </div>
+              <div class="kb-col">
+                <h4>Done <span>5</span></h4>
+                <div class="kb-card"><span class="lbl l3">QA</span><p>Regression for v2.3</p><div class="kb-meta"><small>FS-118</small><i></i></div></div>
+                <div class="kb-card"><span class="lbl l3">Deployed</span><p>v2.3 to production</p><div class="kb-meta"><small>FS-112</small><i class="p"></i></div></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FlowSync feature explorer -->
+        <div class="modules reveal" id="flowsync-features">
+          <div class="modules-head">
+            <h3>What you can do with <span class="grad-text">FlowSync.</span></h3>
+            <p>Roadmap, sprints, issues, GitHub activity and deployments in one simple tool.</p>
+          </div>
+          <div class="mod-explorer">
+            <div class="mod-tabs" role="tablist" aria-label="FlowSync features" aria-orientation="vertical">
+              <button role="tab" id="fstab-plan" aria-controls="fs-plan" aria-selected="true">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><span><b>Plan your work</b><small>Roadmap, epics, sprints</small></span>
+              </button>
+              <button role="tab" id="fstab-track" aria-controls="fs-track" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="5" height="18" rx="1.5"/><rect x="10" y="3" width="5" height="12" rx="1.5"/><rect x="17" y="3" width="4" height="8" rx="1.5"/></svg></span><span><b>Track every piece of work</b><small>Issues, board, time</small></span>
+              </button>
+              <button role="tab" id="fstab-together" aria-controls="fs-together" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></span><span><b>Work together</b><small>Comments, alerts, my work</small></span>
+              </button>
+              <button role="tab" id="fstab-code" aria-controls="fs-code" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 4-6 3-10.5 6"/></svg></span><span><b>Connect code &amp; releases</b><small>GitHub and deployments</small></span>
+              </button>
+              <button role="tab" id="fstab-lead" aria-controls="fs-lead" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg></span><span><b>Lead with confidence</b><small>Overview and dashboards</small></span>
+              </button>
+              <button role="tab" id="fstab-teams" aria-controls="fs-teams" aria-selected="false" tabindex="-1">
+                <span class="mi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></span><span><b>Built for teams &amp; companies</b><small>Workspaces, roles, themes</small></span>
+              </button>
+            </div>
+            <div class="mod-panels">
+              <section class="mod-panel" role="tabpanel" id="fs-plan" aria-labelledby="fstab-plan">
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><div><h4>Plan your work</h4><p>Turn goals into releases, and releases into sprints your team can actually finish.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Roadmap &amp; releases</b><span>Plan versions with target dates and see how close each release is to done.</span></li>
+                  <li><b>Epics</b><span>Group stories, features, tasks and bugs into bigger goals, with progress for each.</span></li>
+                  <li><b>Sprints</b><span>Run two-week sprints with goals, a backlog and a clear view of what's done and what's left.</span></li>
+                  <li><b>Team capacity</b><span>Set each person's hours and days off per sprint, and see who is overloaded before the sprint starts.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="fs-track" aria-labelledby="fstab-track" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="5" height="18" rx="1.5"/><rect x="10" y="3" width="5" height="12" rx="1.5"/><rect x="17" y="3" width="4" height="8" rx="1.5"/></svg></span><div><h4>Track every piece of work</h4><p>Every issue type, one board, and time tracked against the plan.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>All issue types</b><span>Stories, features, tasks, improvements, bugs and subtasks, each with priority, due date and hour estimate.</span></li>
+                  <li><b>Kanban board</b><span>Drag and drop cards through a workflow that only allows the right moves.</span></li>
+                  <li><b>Time logging</b><span>Log time against estimates and see when work runs over.</span></li>
+                  <li><b>Bulk actions</b><span>Reassign, reprioritise or reschedule many issues in one step.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="fs-together" aria-labelledby="fstab-together" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg></span><div><h4>Work together</h4><p>Conversations, files and history live right on the issue.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Rich comments</b><span>@mentions, file attachments and a full change history on every issue.</span></li>
+                  <li><b>Notifications</b><span>An in-app notification bell, with optional sounds for assignments, mentions, comments and urgent issues.</span></li>
+                  <li><b>"My work" page</b><span>Each person's assigned and watched issues, all in one place.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="fs-code" aria-labelledby="fstab-code" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 4-6 3-10.5 6"/></svg></span><div><h4>Connect code &amp; releases</h4><p>See the code behind every issue, and the release that shipped it.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>GitHub linking</b><span>Branches, commits and pull requests that mention an issue appear on it automatically.</span></li>
+                  <li><b>Deployment records</b><span>Log releases by hand or from your build pipeline (CI), and see what is running in each environment.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="fs-lead" aria-labelledby="fstab-lead" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg></span><div><h4>Lead with confidence</h4><p>Spot risks early and keep every sprint on track.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Manager overview</b><span>Team workload, plus overdue, stuck, unassigned and waiting-for-QA work at a glance.</span></li>
+                  <li><b>Personal dashboard</b><span>Each person's day, current sprint and the latest activity.</span></li>
+                </ul>
+              </section>
+              <section class="mod-panel" role="tabpanel" id="fs-teams" aria-labelledby="fstab-teams" hidden>
+                <div class="mod-panel-head"><span class="mi lg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0"/><path d="M16 4a4 4 0 0 1 0 8M22 21a7 7 0 0 0-4-6.3"/></svg></span><div><h4>Built for teams &amp; companies</h4><p>A private, secure workspace that fits the way your company works.</p></div></div>
+                <ul class="mod-list">
+                  <li><b>Private workspace</b><span>Every company gets its own workspace, and each company's data is kept separate.</span></li>
+                  <li><b>Clear roles</b><span>Owners, admins, managers, developers, QA and guests, each with the right access.</span></li>
+                  <li><b>Easy onboarding</b><span>Invite people with a single expiring link, and organise them into teams and projects.</span></li>
+                  <li><b>Make it yours</b><span>Add your company logo and profile pictures, and choose from Light, Dark, Pink, Sunset and Ocean themes.</span></li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section" id="process">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">How we work</span>
+          <h2>A clear path from <span class="grad-text">idea to launch.</span></h2>
+          <p>Lean, transparent and quality-first — you see progress every sprint.</p>
+        </div>
+        <div class="process-grid">
+          <div class="step reveal"><h3>Discover</h3><p>We map your processes, pain points and goals to define the right solution.</p></div>
+          <div class="step reveal" style="--d:.1s"><h3>Architect</h3><p>Scalable system design, data models and a delivery roadmap you can trust.</p></div>
+          <div class="step reveal" style="--d:.2s"><h3>Build &amp; Test</h3><p>Agile sprints with continuous manual and automated QA at every step.</p></div>
+          <div class="step reveal" style="--d:.3s"><h3>Launch &amp; Support</h3><p>Smooth go-live, training, and ongoing improvements as you grow.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= TEAM ================= -->
+    <section class="section team" id="team">
+      <div class="team-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-head center reveal">
+          <span class="eyebrow">Our team</span>
+          <h2>The people behind <span class="grad-text">the flow.</span></h2>
+          <p>A focused team combining architecture, development, quality, project management and people expertise.</p>
+        </div>
+
+        <!-- Team highlights -->
+        <div class="team-stats reveal">
+          <div><b>6</b><span>Team members</span></div>
+          <div><b>6</b><span>Leading universities</span></div>
+          <div class="unis"><span class="uni">UOM</span><span class="uni">UCSC</span><span class="uni">SLIIT</span><span class="uni">USJ</span><span class="uni">OUSL</span><span class="uni">UOP</span></div>
+          <div><b>360°</b><span>Architecture · Dev · QA · PM · HR</span></div>
+        </div>
+
+        <!-- CEO spotlight
+             To use a real photo, replace <div class="initials">GK</div> with:
+             <img src="assets/img/gayan.jpg" alt="Eng. Gayan S. Kavirathne" /> -->
+        <article class="spotlight tilt reveal">
+          <div class="spot-visual">
+            <div class="ring-avatar xl"><img src="assets/img/gayan.jpg" alt="Eng. Gayan S. Kavirathne" width="600" height="600" loading="lazy" decoding="async" /></div>
+            <span class="badge-ceo">Founder &amp; CEO</span>
+          </div>
+          <div class="spot-body">
+            <span class="spot-kicker">Leadership</span>
+            <h3>Eng. Gayan S. Kavirathne</h3>
+            <p class="spot-role">Founder &amp; Chief Executive Officer <i></i> Chief Principal Architect</p>
+            <p class="tagline-words"><span>Visionary Leadership</span><i></i><span>Enterprise Architecture</span><i></i><span>Data-Driven Strategy</span></p>
+            <p class="spot-desc">Leads FlowLabs' vision, product strategy and system architecture — bringing an engineering and
+              data-science foundation to every platform we build, from EPCFlow ERP to FlowSync.</p>
+            <div class="degrees">
+              <div class="degree">
+                <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+                <div><b>BSc Eng (Hons)</b><small>University of Moratuwa</small></div>
+              </div>
+              <div class="degree">
+                <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 4 4 5-6"/></svg></span>
+                <div><b>MSc in Data Science</b><small>University of Moratuwa</small></div>
+              </div>
+            </div>
+            <div class="skills">
+              <span>Solution Architecture</span><span>Data Science</span><span>Enterprise ERP</span><span>Technical Leadership</span>
+            </div>
+            <!-- TODO: replace with Eng. Gayan S. Kavirathne's real LinkedIn profile URL -->
+            <a class="linkedin" href="https://www.linkedin.com/in/gayan-kavirathne" target="_blank" rel="noopener" aria-label="Eng. Gayan S. Kavirathne on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+          </div>
+        </article>
+
+        <div class="team-grid">
+          <!-- Photo: assets/img/thiran.jpg -->
+          <article class="member tilt reveal" style="--d:.05s; --accent: var(--c2)">
+            <span class="dept">Engineering</span>
+            <div class="ring-avatar"><img src="assets/img/thiran.jpg?v=2" alt="Thiran Sasanka" width="340" height="390" loading="lazy" decoding="async" /></div>
+            <h3>Thiran Sasanka</h3>
+            <p class="role">Software Engineer &amp; Team Mentor</p>
+            <p class="tagline-words"><span>Technical Leadership</span><i></i><span>Mentorship</span></p>
+            <p class="bio">Mentors the engineering team day to day — turning architecture into working software, guiding code quality and keeping every sprint on track across EPCFlow and FlowSync.</p>
+            <div class="degree">
+              <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+              <div><b>BSc in Computer Science</b><small>University of Colombo School of Computing</small></div>
+            </div>
+            <div class="skills"><span>Team Mentoring</span><span>Spring Boot</span><span>Laravel</span><span>React</span></div>
+            <!-- TODO: replace with Thiran Sasanka's real LinkedIn profile URL -->
+            <a class="linkedin" href="https://www.linkedin.com/in/thiran-sasanka" target="_blank" rel="noopener" aria-label="Thiran Sasanka on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+          </article>
+
+          <!-- Photo: assets/img/sameera.jpg -->
+          <article class="member tilt reveal" style="--d:.15s; --accent: var(--c5)">
+            <span class="dept">Engineering</span>
+            <div class="ring-avatar"><img src="assets/img/sameera.jpg?v=5" alt="Sameera Maduranga" width="200" height="229" loading="lazy" decoding="async" /></div>
+            <h3>Sameera Maduranga</h3>
+            <p class="role">Associate Software Engineer</p>
+            <p class="tagline-words"><span>Full-Stack Development</span><i></i><span>Problem Solving</span></p>
+            <p class="bio">Builds features end to end across Java, PHP and React — from clean REST APIs to responsive interfaces that make our platforms fast and easy to use.</p>
+            <div class="degree">
+              <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+              <div><b>BSc in Computer Science</b><small>University of Colombo School of Computing</small></div>
+            </div>
+            <div class="skills"><span>Java</span><span>PHP</span><span>React</span><span>REST APIs</span></div>
+            <!-- TODO: replace with Sameera Maduranga's real LinkedIn profile URL -->
+            <a class="linkedin" href="https://www.linkedin.com/in/sameera-maduranga" target="_blank" rel="noopener" aria-label="Sameera Maduranga on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+          </article>
+
+          <!-- Photo: assets/img/thilina.jpg -->
+          <article class="member tilt reveal" style="--d:.25s; --accent: var(--c4)">
+            <span class="dept">Quality Engineering</span>
+            <div class="ring-avatar"><img src="assets/img/thilina.jpg?v=3" alt="Thilina S. Kavirathne" width="408" height="468" loading="lazy" decoding="async" /></div>
+            <h3>Thilina S. Kavirathne</h3>
+            <p class="role">Associate Software Quality Engineer</p>
+            <p class="tagline-words"><span>Quality Assurance</span><i></i><span>Attention to Detail</span></p>
+            <p class="bio">Safeguards every release through manual and automated testing — catching issues early so our products ship stable, reliable and ready for real-world use.</p>
+            <div class="degree">
+              <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+              <div><b>BSc (Hons) in IT, specializing in Information Technology</b><small>SLIIT University, Malabe</small></div>
+            </div>
+            <div class="skills"><span>Manual Testing</span><span>Test Automation</span><span>Regression QA</span><span>Business Analysis</span><span>QA Strategy</span></div>
+            <!-- TODO: replace with Thilina S. Kavirathne's real LinkedIn profile URL -->
+            <a class="linkedin" href="https://www.linkedin.com/in/thilina-kavirathne" target="_blank" rel="noopener" aria-label="Thilina S. Kavirathne on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+          </article>
+
+          <!-- Photo: assets/img/kaumini.jpg -->
+          <article class="member tilt reveal" style="--d:.05s; --accent: var(--c3)">
+            <span class="dept">Project Management</span>
+            <div class="ring-avatar"><img src="assets/img/kaumini.jpg" alt="Kaumini Alwis" width="408" height="468" loading="lazy" decoding="async" /></div>
+            <h3>Kaumini Alwis</h3>
+            <p class="role">Trainee Project Manager</p>
+            <p class="tagline-words"><span>Delivery Excellence</span><i></i><span>Stakeholder Communication</span></p>
+            <p class="bio">Helps keep every project on course — tracking scope, timelines and priorities, coordinating with the team and clients, and supporting on-time delivery.</p>
+            <div class="degree">
+              <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+              <div><b>BSc in Physical Science (UG)</b><small>University of Sri Jayewardenepura</small></div>
+            </div>
+            <div class="skills"><span>Project Planning</span><span>Agile / Scrum</span><span>Stakeholder Management</span><span>Risk Management</span></div>
+            <!-- TODO: replace with Kaumini Alwis's real LinkedIn profile URL -->
+            <a class="linkedin" href="https://www.linkedin.com/in/kaumini-alwis" target="_blank" rel="noopener" aria-label="Kaumini Alwis on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+          </article>
+
+          <!-- Photo: assets/img/ashinshala.jpg -->
+          <article class="member tilt reveal" style="--d:.15s; --accent: var(--c6)">
+            <span class="dept">Human Resources</span>
+            <div class="ring-avatar"><img src="assets/img/ashinshala.jpg" alt="Ashinshala Wijesinghe" width="408" height="468" loading="lazy" decoding="async" /></div>
+            <h3>Ashinshala Wijesinghe</h3>
+            <p class="role">HR Manager</p>
+            <p class="tagline-words"><span>People First</span><i></i><span>Talent &amp; Culture</span></p>
+            <p class="bio">Looks after the people behind FlowLabs — leading recruitment, onboarding and employee wellbeing, and building a culture where our team can grow and do their best work.</p>
+            <div class="deg-stack">
+              <div class="degree">
+                <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21l4-3 4 3"/><path d="M7 9h10M7 12h6"/></svg></span>
+                <div><b>Higher National Diploma in Human Resource</b><small>The Open University of Sri Lanka</small></div>
+              </div>
+              <div class="degree">
+                <span class="deg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg></span>
+                <div><b>Bachelor of Business Administration (UG)</b><small>University of Peradeniya</small></div>
+              </div>
+            </div>
+            <div class="skills"><span>Recruitment</span><span>Employee Relations</span><span>Onboarding</span><span>HR Operations</span></div>
+            <!-- TODO: replace with Ashinshala Wijesinghe's real LinkedIn profile URL -->
+            <a class="linkedin" href="https://www.linkedin.com/in/ashinshala-wijesinghe" target="_blank" rel="noopener" aria-label="Ashinshala Wijesinghe on LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg><span>LinkedIn</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= WHY US ================= -->
+    <section class="section" id="why" style="padding-top:0">
+      <div class="container">
+        <div class="why-grid">
+          <div class="why reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div>
+            <div><h3>Fast &amp; lightweight</h3><p>Performance-first engineering — quick load times and snappy interfaces.</p></div>
+          </div>
+          <div class="why reveal" style="--d:.1s">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <div><h3>Secure by design</h3><p>Role-based access, audit trails and sound architecture from day one.</p></div>
+          </div>
+          <div class="why reveal" style="--d:.2s">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+            <div><h3>Built to evolve</h3><p>Modular systems that grow with your business, not against it.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact" style="padding-top:0">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div>
+            <span class="eyebrow">Let's build together</span>
+            <h2>Ready to get your business <span class="grad-text">flowing?</span></h2>
+            <p>Tell us about your project — whether it's an EPCFlow rollout, joining the FlowSync pilot, or a custom build. We'll get back to you shortly.</p>
+            <div class="contact-points">
+              <!-- TODO: replace with your real public contact email -->
+              <a href="mailto:hello@your-domain.com">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                hello@your-domain.com
+              </a>
+              <div>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                Sri Lanka
+              </div>
+            </div>
+          </div>
+
+          <!-- No backend yet: this form opens the visitor's email client (see assets/js/main.js).
+               To collect submissions server-side, point action= at Formspree or your own API endpoint. -->
+          <form class="contact-form" id="contact-form" data-mailto="hello@your-domain.com" novalidate>
+            <div class="form-row">
+              <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" autocomplete="name" required /></div>
+              <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required /></div>
+            </div>
+            <div class="field">
+              <label for="f-topic">I'm interested in</label>
+              <select id="f-topic" name="topic">
+                <option>EPCFlow ERP</option>
+                <option>FlowSync (pilot)</option>
+                <option>Custom software</option>
+                <option>Quality engineering</option>
+                <option>IT system consultation</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" required></textarea></div>
+            <button type="submit" class="btn btn-primary">
+              Send message
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-note" id="form-note" aria-live="polite">Opens your email app with the message pre-filled.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a href="#top" class="logo" aria-label="FlowLabs home">
+            <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true">
+              <rect width="40" height="40" rx="11" fill="url(#lg)"/>
+              <path d="M11 27c5 0 6-14 12-14 3 0 4 2 6 4" stroke="#05060a" stroke-width="3.4" fill="none" stroke-linecap="round"/>
+              <circle cx="29" cy="26" r="3" fill="#05060a"/>
+            </svg>
+            <span>Flow<b>Labs</b></span>
+          </a>
+          <p>Modern ERP and workflow software, engineered for growing businesses. A Tachyon (Pvt) Ltd company.</p>
+        </div>
+        <div>
+          <h4>Products</h4>
+          <ul><li><a href="#products">EPCFlow ERP</a></li><li><a href="#flowsync-features">FlowSync</a></li></ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul><li><a href="#services">Services</a></li><li><a href="#process">Process</a></li><li><a href="#team">Team</a></li></ul>
+        </div>
+        <div>
+          <h4>Get in touch</h4>
+          <!-- TODO: add LinkedIn / social links here when available -->
+          <ul><li><a href="#contact">Contact us</a></li><li><a href="mailto:hello@your-domain.com">hello@your-domain.com</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> <b>FlowLabs</b> — a <b>Tachyon (Pvt) Ltd</b> company. All rights reserved.</span>
+        <span>Crafted by <b>Thilina S. Kavirathne</b></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

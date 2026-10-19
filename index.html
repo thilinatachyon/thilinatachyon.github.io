@@ -25,7 +25,16 @@
   <script>
     // Apply the saved theme before first paint to avoid a flash.
     document.documentElement.classList.remove('no-js');
-    try { var t = localStorage.getItem('flowlabs-theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    // Every visit / reload shows the next theme in the cycle: dark -> light -> ocean -> sunset -> dark ...
+    (function () {
+      var themes = ['dark', 'light', 'ocean', 'sunset'], next = 'dark';
+      try {
+        var last = localStorage.getItem('flowlabs-last-theme');
+        next = themes[(themes.indexOf(last) + 1) % themes.length];
+        localStorage.setItem('flowlabs-last-theme', next);
+      } catch (e) {}
+      if (next !== 'dark') document.documentElement.setAttribute('data-theme', next);
+    })();
   </script>
 </head>
 <body>

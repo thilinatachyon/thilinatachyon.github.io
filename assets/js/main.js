@@ -133,7 +133,8 @@
   themeOpts.forEach((o) => o.addEventListener('click', () => {
     const name = o.dataset.themeValue;
     applyTheme(name, true);
-    try { localStorage.setItem('flowlabs-theme', name); } catch (e) {}
+    // a manual pick applies now; the next reload continues the cycle from this theme
+    try { localStorage.setItem('flowlabs-last-theme', name); } catch (e) {}
     setThemeMenu(false);
   }));
   document.addEventListener('click', (e) => { if (!themeSwitch.contains(e.target)) setThemeMenu(false); });
